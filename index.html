@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>survey form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+  <title>Austria is great</title>
+  <meta charset='utf-8'>
+  <link rel='stylesheet' href='styles.css'>
+  </head>
+  <body>
+    <main>
+        <h1 id='title'>Austria is great</h1>
+        <p id='description' class='description'><i> Why to move to Austria</i></p>
+
+        <form id='survey-form' action="https://httpbin.org/post" method="POST">
+          <fieldset>
+            <label class='info' id='name-label'>Name</label><input class='text1' id='name' type='text' placeholder='Nuno' required />
+            <label class='info' id='email-label'>Email</label><input class='text1' id='email' type='email' placeholder='nuno@nuno.at' required />
+            <label class='info' id='number-label'>Age</label><input class='text1' id='number' type='number' max='80' min='15' placeholder='20' required />
+            <label class='info'>Country</label>
+              <select class='text2' id='dropdown'>
+                <option value='Slovakia'>Slovakia</option>
+                <option value='Arab Emirates'>United Arab Emirates</option>
+                </select>
+                        <p class='netto'>What is your monthly income in netto?<p>
+          <label for='income'><input id='1000' value='1000' type='radio' name='income' checked />Under 1000$</label><br>
+          <label for='income'><input id='1001' value='1001' type='radio' name='income' />Over &nbsp; 1000$</label>
+          <p class='netto'>Are you satisfied with your earnings so far?</p>
+          <select class='text2'>
+            <option value='Yes'>Yes</option>
+            <option value='Yes'>Yes, but could be better</option>
+            <option value='Yes'>Fucc NO</option>
+          </select>
+          <p class='netto2'>What is special about your country?</p>
+         <label class='options' for='corruption'><input type='checkbox' name='corruption' id='corruption' value='corruption' />Corruption</label>
+          <label class='options' for='Bad people'><input type='checkbox' name='Bad people' id='Bad people' value='Bad people' />Bad people</label>
+          <label class='options' for='No retirements'><input type='checkbox' name='No retirements' id='No retirements' value='No retirements' />No retirements</label>
+          <label class='options' for='Poor Medicine help'><input type='checkbox' name='Poor Medicine help' id='Poor Medicine help' value='Poor Medicine help' />Poor Medicine help</label>
+          <label class='options' for='Fucced up roads'><input type='checkbox' name='Fucced up roads' id='Fucced up roads' value='Fucced up roads' />Fucced up roads</label><br>
+      <p class='netto2'>Do you still feel to stay in there? Let us know why</p>
+      <label for='textarea'><textarea class='text' name='textarea' id='reason'></textarea></label><br>
+        <input class='button' type='submit' id='submit' value='Submit' />
+        </fieldset>
+        </form>
+    </main>
+    <footer>We hope you will reach out for help and move out</footer>
+    </body>
+    </html>
+<!-- partial -->
+  
+</body>
+</html>
